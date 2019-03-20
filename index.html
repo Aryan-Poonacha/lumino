@@ -53,6 +53,9 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
             </li>
+            <li class="nav-item">
+              <a style="color:#64a19d; font-weight: 300;" class="nav-link js-scroll-trigger" href="blog.html">Blog</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -277,17 +280,16 @@
     <section id="progress" class="page-section clearfix">
       <div class="container">
         <div class="intro">
-          <img id ="changer-img" class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/custom/progress.jpg" alt="">
+          <img id ="changer-img" class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/custom/gallery1.jpg" alt="">
           <div class="intro-text left-0 text-center bg-faded p-5 rounded">
             <h2 class="section-heading mb-4">
               <span class="section-heading-upper">Every Book Counts</span>
               <span class="section-heading-lower">Our Progress</span>
             </h2>
-            <p class="mb-3">In a few short months, Lumino has conducted multiple book drives, collecting over 600 books and &#8377; xxx! Look at some of the pictures below that show our progress. Follow our social media pages for new updates, and remember, every donation goes a long way!
+            <p class="mb-3">In a few short months, Lumino has conducted multiple book drives, collecting and donating over 1400 books! Follow our social media pages for new updates, our check out our blog to see our progress from the start!
             </p>
             <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-xl" href="#">Donate Now!</a>
-              <btn onclick="nextImage()" class="btn btn-primary btn-xl" href="#">Next Image -></btn>
+              <a class="btn btn-primary btn-xl" href="blog.html">Our Blog</a>
             </div>
           </div>
         </div>
@@ -326,7 +328,7 @@
                 <i class="fa fa-mobile text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Phone (Bangalore)</h4>
                 <hr class="my-4">
-                <div class="small text-black-50">+91 __________</div>
+                <div class="small text-black-50">+91 72592 20424</div>
               </div>
             </div>
           </div>
@@ -350,7 +352,7 @@
                 <i class="fa fa-mobile text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Phone (Hyderabad)</h4>
                 <hr class="my-4">
-                <div class="small text-black-50">+91 __________</div>
+                <div class="small text-black-50">+91 91000 86705</div>
               </div>
             </div>
           </div>
@@ -395,12 +397,20 @@
     	function nextImage()
     	{
     		img_ctr++;
-    		if(img_ctr == 5) //if img_ctr is one image number above the number of images
+    		if(img_ctr == 4) //if img_ctr is one image number above the number of images
     		{
     			img_ctr = 1;
     		}
     		document.getElementById("changer-img").setAttribute("src", "img/custom/gallery"+img_ctr+".jpg");
     	}
+
+
+    	$(document).ready(function(){
+    		setInterval(function ()
+    		{
+    			nextImage();
+    		}, 5000);
+    	});
     </script>
 
   </body>

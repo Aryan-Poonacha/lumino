@@ -659,7 +659,7 @@ video.fillWidth {
 
 .logo-on-video
 {
-  width: 100px; height: 30px; color: white; z-index: 1; position: absolute; top: 50%; left: 35%;
+  width: 100px; height: 30px; color: white; z-index: 1; position: absolute; top: 46%; left: 31%;
 }
 
 @media (max-width: 768px) {
